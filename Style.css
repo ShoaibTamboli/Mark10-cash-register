@@ -10,11 +10,57 @@
    
   }
 
-  #bill-amount{
-      padding: 1rem;
-     
+  .change-table {
+    width: 60%;
+    
+    border-collapse: collapse;
+    margin: auto;
+  }
+  
+  .change-table caption {
+    margin: 1rem auto;
+    font-size: large;
+   
+  }
+  
+  th,
+  td {
+    border: 2px solid var(--background);
+  
+    border-collapse: collapse;
+    padding: 1rem;
+  }
+  
+  .error-msg {
+    display: block;
+    font-size: larger;
+    margin: 1rem 0 0;
+  }
+  
+
+  #bill-amount,.cash-amount {
+    font-size: 14px;
+    outline: rgb(29, 5, 5);
+    padding: 0.6rem 1rem;
+    margin: 1rem;
+    border: 2px solid var(--background);
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 258px;
+  }
+  
+  #btn-check {
+    background: var(--text);
+    border: solid;
+    border-radius: 0.5rem;
+    font-size: large;
+    cursor: pointer;
+    outline: rgb(216, 16, 16);
+    display: block;
   }
 
-  .cash-amount{
-      padding: 1rem;
+  .BillAmount , .CashAmount{
+    display: block;
+    font-size: large;
+
   }
