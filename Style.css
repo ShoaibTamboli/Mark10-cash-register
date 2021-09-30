@@ -1,12 +1,20 @@
 *{
-    margin: 0rem;
-    padding: 0rem;
+    margin: auto;
+    padding: 0.4rem;
+
    
 }
 
+body{
+  text-align: center;
+  display: block;
+  background-color: var(--Gray)
+}
 :root {
     --background:rgb(119,136,153) ;
     --text: rgb(255,250,250);
+    --Gray: rgb(224, 206, 223);
+    --fontblack: rgb(20, 18, 18);
    
   }
 
@@ -40,27 +48,35 @@
 
   #bill-amount,.cash-amount {
     font-size: 14px;
-    outline: rgb(29, 5, 5);
+    
     padding: 0.6rem 1rem;
     margin: 1rem;
-    border: 2px solid var(--background);
+    border: 2px solid ;
+    border-color:var(--background) ;
     border-radius: 0.5rem;
     width: 100%;
-    max-width: 258px;
+    max-width: 250px;
   }
   
   #btn-check {
     background: var(--text);
-    border: solid;
+    border: 2px solid;
     border-radius: 0.5rem;
     font-size: large;
     cursor: pointer;
-    outline: rgb(216, 16, 16);
-    display: block;
+    outline: var(--text);
+   background-color: var(--fontblack);
+   color: white;
+    
   }
 
   .BillAmount , .CashAmount{
     display: block;
     font-size: large;
 
+  }
+
+  .change-table{
+    
+    text-align: center;
   }
